@@ -1,0 +1,12 @@
+.customColap{
+    background-color: transparent; 
+    border-bottom: 0;
+}
+
+body{
+ background-image: url(https://i.ibb.co/S6phqRF/bg.png);
+ background-position: center;
+ background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;   
+}
