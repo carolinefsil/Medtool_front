@@ -15,7 +15,7 @@ const Login = (props) => {
   async function loginUser() {
 
     try {
-      let retorno = await fetch('http://localhost:8080/users', {
+      let retorno = await fetch('http://localhost:3000/users', {
         method: 'POST',
         headers: {
           'Accept': 'application/json',

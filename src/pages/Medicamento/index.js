@@ -12,7 +12,7 @@ const Medicamento = (props) => {
   async function medicamentoBack() {
 
     try {
-      let retorno = await fetch('http://localhost:8080/medicamento', {
+      let retorno = await fetch('http://localhost:3000/medicamento', {
           method: 'POST',
           headers: {
               'Accept': 'application/json',

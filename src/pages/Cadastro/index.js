@@ -11,7 +11,7 @@ const Cadastro = (props) => {
 
   async function registerUserBack() {
     try {
-      let retorno = await fetch('http://localhost:8080/users', {
+      let retorno = await fetch('http://localhost:3000/users', {
         method: 'POST',
         headers: {
           'Accept': 'application/json',
@@ -77,10 +77,6 @@ const Cadastro = (props) => {
             <div className="login-form">
               <h1 className="text-center">Cadastro</h1>
               <form>
-                <div className="form-group">
-                  <label>Nome</label>
-                  <input type="text" className="form-control" value={name.toString()} onChange={e => setName(e.target.value)} required />
-                </div>
                 <div className="form-group">
                   <label>Usuario</label>
                   <input type="text" className="form-control" value={username.toString()} onChange={e => setUsername(e.target.value)} required />

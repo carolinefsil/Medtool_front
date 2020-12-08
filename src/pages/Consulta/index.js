@@ -16,7 +16,7 @@ const Consulta = (props) => {
   async function consultaBack() {
 
     try {
-      let retorno = await fetch('http://localhost:8080/consulta', {
+      let retorno = await fetch('http://localhost:3000/consulta', {
           method: 'POST',
           headers: {
               'Accept': 'application/json',
@@ -112,7 +112,7 @@ const Consulta = (props) => {
 
                     <br/>
                     <label>Posologia</label>
-                    <select  className="form-control" value={posologia} onChange={e => setPosologia(e.target.value)}/>
+                    <input  className="form-control" type="text" onChange={e => setPosologia(e.target.value)}/>
                   </form>
                   <br/>
                   <button type="button" className="btn btn-outline-info" onClick={handleClick}>Enviar</button>
