@@ -15,8 +15,8 @@ const Login = (props) => {
   async function loginUser() {
 
     try {
-      let retorno = await fetch('http://localhost:3000/users', {
-        method: 'POST',
+      let retorno = await fetch('http://localhost:8080/users', {
+        method: 'GET',
         headers: {
           'Accept': 'application/json',
           'Content-Type': 'application/json',

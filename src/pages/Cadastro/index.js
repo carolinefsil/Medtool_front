@@ -11,7 +11,7 @@ const Cadastro = (props) => {
 
   async function registerUserBack() {
     try {
-      let retorno = await fetch('http://localhost:3000/users', {
+      let retorno = await fetch('http://localhost:8080/users', {
         method: 'POST',
         headers: {
           'Accept': 'application/json',

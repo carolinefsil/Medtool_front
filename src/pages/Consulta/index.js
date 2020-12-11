@@ -16,7 +16,7 @@ const Consulta = (props) => {
   async function consultaBack() {
 
     try {
-      let retorno = await fetch('http://localhost:3000/consulta', {
+      let retorno = await fetch('http://localhost:8080/consulta', {
           method: 'POST',
           headers: {
               'Accept': 'application/json',
@@ -101,15 +101,26 @@ const Consulta = (props) => {
                     <input className="form-control" type="date"  value={data.toString()} onChange={e => setData(e.target.value)} />
                     <br />
                     <label>Medico</label>
-                    <select  className="form-control" value={medico} onChange={e => setMedico(e.target.value)}/>
-        
+                    <select  className="form-control">
+                    <option>Dr Drauzio Varella</option>
+                    <option>Dra Adriana de Oliveira</option>
+                    <option>Dra Angelita Habr-Gama</option>
+                     </select>
                     <br />
                     <label>Paciente</label>
-                    <select className="form-control" value={paciente} onChange={e => setPaciente(e.target.value)}/>
+                    <select className="form-control" >
+                    <option>Caroline</option>
+                    <option>Breno</option>
+                    <option>Ray</option>
+                     <option>Raphael</option>
+                     </select>
                     <br />
                     <label>Medicamento</label>
-                    <select  className="form-control"  value={medicamento} onChange={e => setMedicamento(e.target.value)}/>
-
+                    <select  className="form-control">
+                        <option>Amoxilina</option>
+                         <option>Cloroquina</option>
+                          <option>Diazepam</option>
+                          </select>
                     <br/>
                     <label>Posologia</label>
                     <input  className="form-control" type="text" onChange={e => setPosologia(e.target.value)}/>
